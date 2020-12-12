@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d041646e-7e60-43e0-8d10-b82c1115c6b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/LC_Fiting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LC_Fiting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc_fit.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc_fit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +61,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/FermiAnalyse/2_z_2.5/PKS_1430_178/pks_1430_178_sed_input_model.xml" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="Python.lc_fit">
     <configuration name="lc_fit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -142,50 +147,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="420" y="234" key="FileChooserDialogImpl" timestamp="1607533139774">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="420" y="234" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1607533139774" />
-    <state width="1237" height="325" key="GridCell.Tab.0.bottom" timestamp="1607532960700">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607532960700" />
-    <state width="1237" height="325" key="GridCell.Tab.0.center" timestamp="1607532960700">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1607532960700" />
-    <state width="1237" height="325" key="GridCell.Tab.0.left" timestamp="1607532960700">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1607532960700" />
-    <state width="1237" height="325" key="GridCell.Tab.0.right" timestamp="1607532960700">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1607532960700" />
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1607532960700">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607532960700" />
-    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1607532960700">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1607532960700" />
-    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1607532960700">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1607532960700" />
-    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1607532960700">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1607532960700" />
-    <state x="141" y="137" key="SettingsEditor" timestamp="1607521061729">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="141" y="137" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1607521061729" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LC_Fiting$main.coverage" NAME="main Coverage Results" MODIFIED="1607509522319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LC_Fiting$lc_fit.coverage" NAME="lc_fit Coverage Results" MODIFIED="1607532046388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
 </project>
