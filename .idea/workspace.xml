@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d041646e-7e60-43e0-8d10-b82c1115c6b5" name="Default Changelist" comment="" />
+    <list default="true" id="d041646e-7e60-43e0-8d10-b82c1115c6b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotting/PhIndex_flux.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting/PhIndex_flux.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,9 +66,59 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/FermiAnalyse/2_z_2.5/PKS_1430_178/pks_1430_178_sed_input_model.xml" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.archive_sed">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PyCharm\fiting\LC_fitting" />
+      <recent name="D:\PyCharm\fiting\SED_fitting" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.PhIndex_flux">
+    <configuration name="PhIndex_flux" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LC_Fiting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Plotting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Plotting/PhIndex_flux.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="archive_sed (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LC_Fiting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SED_fitting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SED_fitting/archive_sed.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="archive_sed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LC_Fiting" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,6 +187,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PhIndex_flux" />
+        <item itemvalue="Python.archive_sed (1)" />
         <item itemvalue="Python.archive_sed" />
         <item itemvalue="Python.lc_fit" />
       </list>
@@ -151,7 +206,9 @@
       <workItem from="1607507908566" duration="9407000" />
       <workItem from="1607523721166" duration="5703000" />
       <workItem from="1607533071100" duration="467000" />
-      <workItem from="1607947968064" duration="3443000" />
+      <workItem from="1607947968064" duration="8415000" />
+      <workItem from="1607959868537" duration="7149000" />
+      <workItem from="1607970563643" duration="3489000" />
     </task>
     <servers />
   </component>
@@ -176,31 +233,33 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="403" key="GridCell.Tab.0.bottom" timestamp="1607951241858">
+    <state width="1237" height="403" key="GridCell.Tab.0.bottom" timestamp="1607974368527">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607951241858" />
-    <state width="1237" height="403" key="GridCell.Tab.0.center" timestamp="1607951241858">
+    <state width="1237" height="403" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607974368527" />
+    <state width="1237" height="403" key="GridCell.Tab.0.center" timestamp="1607974368527">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1607951241858" />
-    <state width="1237" height="403" key="GridCell.Tab.0.left" timestamp="1607951241858">
+    <state width="1237" height="403" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1607974368527" />
+    <state width="1237" height="403" key="GridCell.Tab.0.left" timestamp="1607974368526">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1607951241858" />
-    <state width="1237" height="403" key="GridCell.Tab.0.right" timestamp="1607951241858">
+    <state width="1237" height="403" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1607974368526" />
+    <state width="1237" height="403" key="GridCell.Tab.0.right" timestamp="1607974368527">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1607951241858" />
-    <state x="141" y="137" key="SettingsEditor" timestamp="1607875388965">
+    <state width="1237" height="403" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1607974368527" />
+    <state x="141" y="137" key="SettingsEditor" timestamp="1607970621035">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="141" y="137" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1607875388965" />
+    <state x="141" y="137" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1607970621035" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LC_Fiting$main.coverage" NAME="main Coverage Results" MODIFIED="1607509522319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fiting$archive_sed.coverage" NAME="archive_sed Coverage Results" MODIFIED="1607951082222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fiting$archive_sed__1_.coverage" NAME="archive_sed (1) Coverage Results" MODIFIED="1607956421555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SED_fitting" />
+    <SUITE FILE_PATH="coverage/fiting$archive_sed.coverage" NAME="archive_sed Coverage Results" MODIFIED="1607956406626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fiting$lc_fit.coverage" NAME="lc_fit Coverage Results" MODIFIED="1607871387765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LC_Fiting$lc_fit.coverage" NAME="lc_fit Coverage Results" MODIFIED="1607532046388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fiting$PhIndex_flux.coverage" NAME="PhIndex_flux Coverage Results" MODIFIED="1607974361766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Plotting" />
   </component>
 </project>
