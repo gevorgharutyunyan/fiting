@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d041646e-7e60-43e0-8d10-b82c1115c6b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/LC_Fiting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LC_Fiting.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/archive_sed.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive_sed.py" afterDir="false" />
     </list>
@@ -156,6 +154,7 @@
       <workItem from="1607507908566" duration="9407000" />
       <workItem from="1607523721166" duration="5703000" />
       <workItem from="1607533071100" duration="467000" />
+      <workItem from="1607947968064" duration="2772000" />
     </task>
     <servers />
   </component>
@@ -180,22 +179,22 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="403" key="GridCell.Tab.0.bottom" timestamp="1607887544734">
+    <state width="1237" height="403" key="GridCell.Tab.0.bottom" timestamp="1607951082229">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607887544734" />
-    <state width="1237" height="403" key="GridCell.Tab.0.center" timestamp="1607887544734">
+    <state width="1237" height="403" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607951082229" />
+    <state width="1237" height="403" key="GridCell.Tab.0.center" timestamp="1607951082229">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1607887544734" />
-    <state width="1237" height="403" key="GridCell.Tab.0.left" timestamp="1607887544733">
+    <state width="1237" height="403" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1607951082229" />
+    <state width="1237" height="403" key="GridCell.Tab.0.left" timestamp="1607951082229">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1607887544733" />
-    <state width="1237" height="403" key="GridCell.Tab.0.right" timestamp="1607887544734">
+    <state width="1237" height="403" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1607951082229" />
+    <state width="1237" height="403" key="GridCell.Tab.0.right" timestamp="1607951082229">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1607887544734" />
+    <state width="1237" height="403" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1607951082229" />
     <state x="141" y="137" key="SettingsEditor" timestamp="1607875388965">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -203,7 +202,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LC_Fiting$main.coverage" NAME="main Coverage Results" MODIFIED="1607509522319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fiting$archive_sed.coverage" NAME="archive_sed Coverage Results" MODIFIED="1607887544723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fiting$archive_sed.coverage" NAME="archive_sed Coverage Results" MODIFIED="1607951082222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fiting$lc_fit.coverage" NAME="lc_fit Coverage Results" MODIFIED="1607871387765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LC_Fiting$lc_fit.coverage" NAME="lc_fit Coverage Results" MODIFIED="1607532046388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
