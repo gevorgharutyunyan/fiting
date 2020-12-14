@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d041646e-7e60-43e0-8d10-b82c1115c6b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive_sed.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive_sed.py" afterDir="false" />
-    </list>
+    <list default="true" id="d041646e-7e60-43e0-8d10-b82c1115c6b5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +79,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/archive_sed.py" />
+      <option name="SCRIPT_NAME" value="D:\PyCharm\fiting\SED_fitting\archive_sed.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +101,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc_fit.py" />
+      <option name="SCRIPT_NAME" value="D:\PyCharm\fiting\LC_fitting\lc_fit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +151,7 @@
       <workItem from="1607507908566" duration="9407000" />
       <workItem from="1607523721166" duration="5703000" />
       <workItem from="1607533071100" duration="467000" />
-      <workItem from="1607947968064" duration="2772000" />
+      <workItem from="1607947968064" duration="3443000" />
     </task>
     <servers />
   </component>
@@ -179,22 +176,22 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="403" key="GridCell.Tab.0.bottom" timestamp="1607951082229">
+    <state width="1237" height="403" key="GridCell.Tab.0.bottom" timestamp="1607951241858">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607951082229" />
-    <state width="1237" height="403" key="GridCell.Tab.0.center" timestamp="1607951082229">
+    <state width="1237" height="403" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607951241858" />
+    <state width="1237" height="403" key="GridCell.Tab.0.center" timestamp="1607951241858">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1607951082229" />
-    <state width="1237" height="403" key="GridCell.Tab.0.left" timestamp="1607951082229">
+    <state width="1237" height="403" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1607951241858" />
+    <state width="1237" height="403" key="GridCell.Tab.0.left" timestamp="1607951241858">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1607951082229" />
-    <state width="1237" height="403" key="GridCell.Tab.0.right" timestamp="1607951082229">
+    <state width="1237" height="403" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1607951241858" />
+    <state width="1237" height="403" key="GridCell.Tab.0.right" timestamp="1607951241858">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="403" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1607951082229" />
+    <state width="1237" height="403" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1607951241858" />
     <state x="141" y="137" key="SettingsEditor" timestamp="1607875388965">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

@@ -1,19 +1,18 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
-from Constants import*
+from SED_fitting.Constants import*
 from scipy.integrate import quad
 
-archiv_data = pd.read_csv("PKS1430178.txt",header=None,delim_whitespace=True,error_bad_lines=False,warn_bad_lines=False)
+archiv_data = pd.read_csv("PKS1430178.txt", header=None, delim_whitespace=True, error_bad_lines=False, warn_bad_lines=False)
 archiv_sed = pd.DataFrame(archiv_data)
 
-flare_data = pd.read_csv("flare_pks_1430_178_sed_data.csv",delim_whitespace=True,
-                                                                             error_bad_lines=False,warn_bad_lines=False)
+flare_data = pd.read_csv("flare_pks_1430_178_sed_data.csv", delim_whitespace=True,
+                         error_bad_lines=False, warn_bad_lines=False)
 flare = pd.DataFrame(flare_data)
 flare=flare[flare.Flux_Error !=0]
 
-quit_data = pd.read_csv("pks_1430_178_sed_data.csv",delim_whitespace=True,
-                                                                             error_bad_lines=False,warn_bad_lines=False)
+quit_data = pd.read_csv("pks_1430_178_sed_data.csv", delim_whitespace=True,
+                        error_bad_lines=False, warn_bad_lines=False)
 quit = pd.DataFrame(quit_data)
 quit=quit[quit.Flux_Error !=0]
 

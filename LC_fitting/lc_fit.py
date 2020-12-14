@@ -39,7 +39,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-csv = pd.read_csv("LC_result_file.csv",sep="\t")
+csv = pd.read_csv("LC_result_file.csv", sep="\t")
 fit_data = pd.DataFrame(csv)
 fit_data=fit_data.loc[fit_data["Flux_error"]!=0]
 
