@@ -1,7 +1,12 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-from SED_fitting.Constants import*
+from Constants import*
 from scipy.integrate import quad
+
+saqo_txt = pd.read_csv("saqo_check.txt", header=None, delim_whitespace=True, error_bad_lines=False, warn_bad_lines=False)
+saqo = pd.DataFrame(saqo_txt)
+
+
 
 archiv_data = pd.read_csv("PKS1430178.txt", header=None, delim_whitespace=True, error_bad_lines=False, warn_bad_lines=False)
 archiv_sed = pd.DataFrame(archiv_data)
@@ -23,19 +28,20 @@ qt_err1 = quit.Energy_Center-quit.Energy_Min
 qt_err2 = quit.Energy_Max-quit.Energy_Center
 
 
-
 fig, ax = plt.subplots(figsize=(14, 5))
 
+#for check
+ax.plot(saqo[0],saqo[1],color='y',)
 # Archived data from asi.it
-ax.errorbar(hev*archiv_sed[0], archiv_sed[2],xerr = archiv_sed[1],yerr = archiv_sed[3],color='r',ls ="None",fmt =".",label="Archived")
+#ax.errorbar(hev*archiv_sed[0], archiv_sed[2],xerr = archiv_sed[1],yerr = archiv_sed[3],color='r',ls ="None",fmt =".",label="Archived")
 
 # 6 point SED of a flare (data based on fermi analysis)
-ax.errorbar(flare.Energy_Center*10**6, flare.Flux,yerr=flare.Flux_Error,xerr =[fl_err1*10**6,fl_err2*10**6]
-            ,color='b',fmt = ".",label="Flaring state")
+#ax.errorbar(flare.Energy_Center*10**6, flare.Flux,yerr=flare.Flux_Error,xerr =[fl_err1*10**6,fl_err2*10**6]
+#            ,color='b',fmt = ".",label="Flaring state")
 
 
 # 6 point SED for quit state (data based on fermi analysis)
-ax.errorbar(quit.Energy_Center*10**6, quit.Flux,yerr=quit.Flux_Error,xerr =[qt_err1*10**6,qt_err2*10**6],color='g',fmt = ".",label="Quiescent state")
+#ax.errorbar(quit.Energy_Center*10**6, quit.Flux,yerr=quit.Flux_Error,xerr =[qt_err1*10**6,qt_err2*10**6],color='g',fmt = ".",label="Quiescent state")
 
 
 # Power law functions
@@ -95,7 +101,7 @@ def luminosity(B, alpha,alpha_1,alpha_2,photon_eng, gamma_cutOff,gamma_break, cu
 # Considering Lorentz transformation formulas F should be multiplied by doppler factor ^4. F = delta^4*F'
 # As an energy unit are being used erg(for converting use ev to erg ratio).
 def flux_our_system(B, alpha,alpha_1,alpha_2,photon_eng, gamma_cutOff,gamma_break, cutOff_bool,broken_bool):
-    return (doppler_factor**4)*1/(evtoerg*distance_surf)*luminosity(B, alpha,alpha_1,alpha_2,photon_eng*(1+red_shift)/doppler_factor, gamma_cutOff,gamma_break, cutOff_bool,broken_bool)
+    return (doppler_factor**2)*1/(evtoerg*distance_surf)*luminosity(B, alpha,alpha_1,alpha_2,photon_eng*(1+red_shift)/doppler_factor, gamma_cutOff,gamma_break, cutOff_bool,broken_bool)
 
 
 
@@ -113,14 +119,15 @@ def synchrotron_plotter(B, alpha, alpha_1, alpha_2, gamma_cutOff, gamma_break, c
     ax.plot(energy_axis, synchrotron_flux, color="gray")
     ax.plot()
 
-synchrotron_plotter(0.41, 2.05, None, None, 2000, None, 1, 0)
+synchrotron_plotter(0.02, 2.697877, None, None,(187.518*10**9)/(restenergy), None, 1, 0)
 ax.set_title("SED of PKS 1430-178", fontsize=14, fontweight='bold')
 ax.set_xlabel('E [eV]')
 ax.set_ylabel(r"$\nu F(\nu)\/ (erg\/cm^{-2} s^{-1})$")
-ax.set_ylim(10**-14,2*10**-10)
+ax.set_ylim(10**-18,2*10**-14)
 ax.set_xlim(10**-6,10**13)
 ax.set_xscale('log')
 ax.set_yscale('log')
-ax.legend()
-plt.show()
+#ax.legend()
+plt.savefig('SED.pdf')
+#plt.show()
 

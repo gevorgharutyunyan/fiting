@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.integrate import quad
 
 # Constants
 e = 4.8032 * 10 ** (-10)  # Electron charge
@@ -13,13 +14,13 @@ ergtoev = 6.24 * 10 ** (11)  # eV
 evtoerg = 0.16 * 10 ** (-11)  # erg
 parsec = 3.086*10**18 # One parsec is a 3.086*10**18 cm
 inverse_restEng = 1/restenergy # for simplicity
-N0 = 1.1 * 10 ** (54)  # number of electrons
-doppler_factor = 20  # Bulk gamma is equal to doppler factor
-source_distance = 1.7896929972 * 10 ** (28)
-distance_surf = 4 * np.pi * (source_distance**2)  # Luminosity should be divided to suface
-gamma_min = 37  # minimum energy of radiated photon
-gamma_max = 1.5*10**4  # maximum energy of a radiated photon
-red_shift = 2.331
+N0 = 1.508925980710247e+60  # number of electrons
+doppler_factor = 10  # Bulk gamma is equal to doppler factor
+source_distance = (142*10e6*parsec)**2
+distance_surf = 4 * np.pi * source_distance  # Luminosity should be divided to surface
+gamma_min = (500*10**9)/(restenergy*1000)  # minimum energy of radiated photon
+gamma_max = 877.7743*10**9/restenergy  # maximum energy of a radiated photon
+red_shift = 0.034
 cmb_temp = 2.72 # cosmic microwave background temperature
 thetta_blr   = 0.6 # reflection coefficient for broad line region
 thetta_torus = 0.6 # reflection coefficient for Torus
@@ -29,3 +30,19 @@ blr_radius = 10**17*(disc_luminosity/10**45)**0.5
 torus_temp = 1000# temperature of torus
 blob_radius = 1.6*10**17 # radius of emission region
 torus_radius = 0.4*((disc_luminosity/10**45)**0.5)*((1500/torus_temp)**2.6)*(3.086*10**18)
+
+W=10**(48.78155)
+
+
+def PowerLawExpCutOff(alpha, gamma_cutOff, gamma):
+    return (gamma ** (-alpha)) * np.exp(-(gamma / gamma_cutOff))
+
+
+
+
+for_n=quad(lambda j: (10 ** j) * (np.log(10)) * PowerLawExpCutOff(2.697877, (187.518*10**9)/(restenergy), 10 ** j),
+         np.log10(gamma_min), np.log10(gamma_max))[0]
+
+print(gamma_min)
+n = W/(m*(c**2)*for_n)
+print(n)
