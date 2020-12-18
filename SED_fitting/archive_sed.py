@@ -8,15 +8,15 @@ saqo = pd.DataFrame(saqo_txt)
 
 
 
-archiv_data = pd.read_csv("PKS1430178.txt", header=None, delim_whitespace=True, error_bad_lines=False, warn_bad_lines=False)
+archiv_data = pd.read_csv("PKS 1430-178/PKS1430178.txt", header=None, delim_whitespace=True, error_bad_lines=False, warn_bad_lines=False)
 archiv_sed = pd.DataFrame(archiv_data)
 
-flare_data = pd.read_csv("flare_pks_1430_178_sed_data.csv", delim_whitespace=True,
+flare_data = pd.read_csv("PKS 1430-178/flare_pks_1430_178_sed_data.csv", delim_whitespace=True,
                          error_bad_lines=False, warn_bad_lines=False)
 flare = pd.DataFrame(flare_data)
 flare=flare[flare.Flux_Error !=0]
 
-quit_data = pd.read_csv("pks_1430_178_sed_data.csv", delim_whitespace=True,
+quit_data = pd.read_csv("PKS 1430-178/pks_1430_178_sed_data.csv", delim_whitespace=True,
                         error_bad_lines=False, warn_bad_lines=False)
 quit = pd.DataFrame(quit_data)
 quit=quit[quit.Flux_Error !=0]
@@ -48,7 +48,7 @@ ax.plot(saqo[0],saqo[1],color='y',)
 
 #Electron energy distribution can be power law with exponential cut off or broken power law.
 
-def PowerLawExpCutOff(alpha, gamma_cutOff, gamma,**kwargs):
+def PowerLawExpCutOff(alpha, gamma_cutOff, gamma):
 
     return N0 * (gamma ** (-alpha)) * np.exp(-(gamma / gamma_cutOff))
 
@@ -77,9 +77,17 @@ def bessel_function(x):
                        1 + (1.64 * (x) ** (2 / 3)) + (0.974 * (x) ** (4 / 3))) * np.exp((-x))
 
 
+def G_y(y):
+    a = 1.808 * (y) ** (1 / 3)
+    b = 1+(2.21*(y) ** (2 / 3))+(0.347*(y) ** (4 / 3))
+    c = np.sqrt(1+3.4*(y) ** (2 / 3))
+    d = 1+(1.353*(y) ** (2 / 3))+(0.217*(y) ** (4 / 3))
+    return  (a/c)*(b/d)*np.exp(-y)
+
+print(G_y(1))
 # Quantity of emitted photons in per second with E energy(Differential spectrum dN/dE*dt)
 def diff_spectrum(photon_eng, B, gamma):
-    return ((np.sqrt(3) * (e ** 3) * B) / (2 * np.pi * restenergy * h * photon_eng)) * bessel_function(
+    return ((np.sqrt(3) * (e ** 3) * B) / (2 * np.pi * restenergy * h * photon_eng)) * G_y(
        photon_eng / char_energy(B, gamma))
 
 
@@ -93,7 +101,7 @@ def emission_spectrum(B, alpha,alpha_1,alpha_2,photon_eng, gamma_cutOff,gamma_br
 
 # Bolometric Synchrotron luminosity wich we get multiplying emission spectrum by square of photon energy(erg s^-1)
 def luminosity(B, alpha,alpha_1,alpha_2,photon_eng, gamma_cutOff,gamma_break, cutOff_bool,broken_bool):
-    return photon_eng**2*emission_spectrum(B, alpha,alpha_1,alpha_2,photon_eng, gamma_cutOff,gamma_break, cutOff_bool,broken_bool)
+    return (photon_eng**2)*emission_spectrum(B, alpha,alpha_1,alpha_2,photon_eng, gamma_cutOff,gamma_break, cutOff_bool,broken_bool)
 
 
 
@@ -101,7 +109,7 @@ def luminosity(B, alpha,alpha_1,alpha_2,photon_eng, gamma_cutOff,gamma_break, cu
 # Considering Lorentz transformation formulas F should be multiplied by doppler factor ^4. F = delta^4*F'
 # As an energy unit are being used erg(for converting use ev to erg ratio).
 def flux_our_system(B, alpha,alpha_1,alpha_2,photon_eng, gamma_cutOff,gamma_break, cutOff_bool,broken_bool):
-    return (doppler_factor**2)*1/(evtoerg*distance_surf)*luminosity(B, alpha,alpha_1,alpha_2,photon_eng*(1+red_shift)/doppler_factor, gamma_cutOff,gamma_break, cutOff_bool,broken_bool)
+    return ((doppler_factor**4)*1/(evtoerg*distance_surf))*luminosity(B, alpha,alpha_1,alpha_2,photon_eng*(1+red_shift)/doppler_factor, gamma_cutOff,gamma_break, cutOff_bool,broken_bool)
 
 
 
